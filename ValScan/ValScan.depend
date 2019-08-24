@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1367427087 source:c:\erikprogram\sysbiol\valscan\main.cpp
+	<iostream>
+	<fstream>
+	<vector>
+	"data_display.h"
+
+1367424201 c:\erikprogram\sysbiol\valscan\data_display.h
+	<math.h>
+	<vector>
+
+1367428217 source:c:\erikprogram\sysbiol\valscan\data_display.cpp
+	"data_display.h"
+

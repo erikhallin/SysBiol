@@ -1,0 +1,48 @@
+//Pseudo code summary for Oscillating regulation
+
+//Start values
+float m_start_time=0.0;
+float m_end_time=200.0;
+float m_step_size=0.01;
+
+float m_alpha=10.1;
+float m_alpha_0=0.1;
+float m_hill_coef=1.8;
+float m_beta=1.1;
+
+float m_mrna_lacI=0.0;
+float m_mrna_tetR=0.0;
+float m_mrna_cl=1.0;
+
+float m_prot_lacI=0.0;
+float m_prot_tetR=0.0;//reporter
+float m_prot_cl=1.0;
+
+
+//Euler steps
+for(float t=m_time_start; t<=m_time_end; t+=m_step_size)
+{
+    //update derivative
+    update_deriv();
+
+    //update mRNA and Protein concentrations
+    m_curr_mrna_lacI+= m_step_size*m_deriv_mrna_lacI;
+    m_curr_mrna_tetR+= m_step_size*m_deriv_mrna_tetR;
+    m_curr_mrna_cl+= m_step_size*m_deriv_mrna_cl;
+    m_curr_prot_lacI+= m_step_size*m_deriv_prot_lacI;
+    m_curr_prot_tetR+= m_step_size*m_deriv_prot_tetR;
+    m_curr_prot_cl+= m_step_size*m_deriv_prot_cl;
+}
+
+bool update_deriv(void)
+{
+    m_deriv_mrna_lacI= -m_curr_mrna_lacI+ ( m_alpha/( 1 + pow(m_curr_prot_cl,m_hill_coef) ) ) + m_alpha_0;
+    m_deriv_mrna_tetR= -m_curr_mrna_tetR+ ( m_alpha/( 1 + pow(m_curr_prot_lacI,m_hill_coef) ) ) + m_alpha_0;
+    m_deriv_mrna_cl= -m_curr_mrna_cl+ ( m_alpha/( 1 + pow(m_curr_prot_tetR,m_hill_coef) ) ) + m_alpha_0;
+
+    m_deriv_prot_lacI= -m_beta * ( m_curr_prot_lacI - m_curr_mrna_lacI );
+    m_deriv_prot_tetR= -m_beta * ( m_curr_prot_tetR - m_curr_mrna_tetR );
+    m_deriv_prot_cl= -m_beta * ( m_curr_prot_cl - m_curr_mrna_cl );
+
+    return true;
+}

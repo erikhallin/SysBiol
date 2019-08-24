@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="ValHitView" />
+	<File name="data_display.cpp" open="1" top="0" tabpos="3">
+		<Cursor position="1940" topLine="27" />
+	</File>
+	<File name="data_display.h" open="1" top="0" tabpos="2">
+		<Cursor position="758" topLine="8" />
+	</File>
+	<File name="main.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="8508" topLine="248" />
+	</File>
+</CodeBlocks_layout_file>

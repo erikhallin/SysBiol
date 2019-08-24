@@ -1,0 +1,51 @@
+# depslib dependency file v1.0
+1367254368 source:c:\cpp\sysbiol\oscillator\graph.cpp
+	"graph.h"
+
+1367426666 c:\cpp\sysbiol\oscillator\graph.h
+	<stdlib.h>
+	<vector>
+	<gl\gl.h>
+	<iostream>
+
+1367499888 source:c:\cpp\sysbiol\oscillator\main.cpp
+	<SOIL/SOIL.h>
+	<windows.h>
+	<gl/gl.h>
+	<fcntl.h>
+	<stdio.h>
+	"data_display.h"
+
+1367426666 c:\cpp\sysbiol\oscillator\data_display.h
+	<math.h>
+	<vector>
+	"graph.h"
+
+1367500128 source:c:\cpp\sysbiol\oscillator\data_display.cpp
+	"data_display.h"
+
+1367254368 source:c:\erikprogram\sysbiol\oscillator\graph.cpp
+	"graph.h"
+
+1367426666 c:\erikprogram\sysbiol\oscillator\graph.h
+	<stdlib.h>
+	<vector>
+	<gl\gl.h>
+	<iostream>
+
+1367435101 source:c:\erikprogram\sysbiol\oscillator\main.cpp
+	<SOIL/SOIL.h>
+	<windows.h>
+	<gl/gl.h>
+	<fcntl.h>
+	<stdio.h>
+	"data_display.h"
+
+1367426666 c:\erikprogram\sysbiol\oscillator\data_display.h
+	<math.h>
+	<vector>
+	"graph.h"
+
+1367325958 source:c:\erikprogram\sysbiol\oscillator\data_display.cpp
+	"data_display.h"
+

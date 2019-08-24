@@ -1,0 +1,49 @@
+//Startvärden
+float start_u=0.0;//Repressor 1 proportional to [GFP]
+float start_v=1.0;//Repressor 2
+float start_time=0.0;
+float end_time=50.0;
+float step_size=0.01;
+
+float alpha_u=2.0;
+float alpha_v=2.0;
+float beta_u=2.0;
+float beta_v=2.0;
+float iptg_conc_start=0.0;
+float iptg_const=2.9618/100000.0;
+float iptg_pow=2.0015;
+
+
+//Euler steps
+bool generate_data()
+{
+    for(float t=m_time_start; t<=m_time_end; t+=m_step_size)
+    {
+        //get derivative
+        float deriv_u,deriv_v;
+        get_deriv(m_curr_u, m_curr_v,
+                            m_alpha_u, m_alpha_v,
+                            m_beta_u, m_beta_v,
+                            deriv_u, deriv_v)
+
+        //update u and v
+        m_curr_u+= m_step_size * deriv_u;
+        m_curr_v+= m_step_size * deriv_v;
+    }
+
+    return true;
+}
+
+
+
+//Derivata
+bool get_deriv(float curr_u,float curr_v,
+                             float alpha_u,float alpha_v,
+                             float beta_u,float beta_v,
+                             float& deriv_u,float& deriv_v)
+{
+    deriv_u= ( alpha_u / ( 1.0 + pow( curr_v,beta_u ) ) ) - curr_u;
+    deriv_v= ( alpha_v / ( 1.0 + pow( curr_u,beta_v ) ) ) - curr_v;
+
+    return true;
+}

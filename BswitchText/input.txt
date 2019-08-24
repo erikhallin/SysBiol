@@ -1,0 +1,13 @@
+//Startvalues
+start_u 0.0
+start_v 1.0
+start_time 0.0
+end_time 50.0
+step_size 0.01
+alpha_u 156.25
+alpha_v 15.6
+beta_u 2.5
+beta_v 1.0
+iptg_conc_start 0.0
+iptg_const 2.9618E-5
+iptg_pow 2.0015

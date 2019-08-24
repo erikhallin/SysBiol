@@ -1,0 +1,54 @@
+# depslib dependency file v1.0
+1367254368 source:c:\cpp\sysbiol\valhitview\graph.cpp
+	"graph.h"
+
+1367426666 c:\cpp\sysbiol\valhitview\graph.h
+	<stdlib.h>
+	<vector>
+	<gl\gl.h>
+	<iostream>
+
+1367495650 source:c:\cpp\sysbiol\valhitview\data_display.cpp
+	"data_display.h"
+
+1367495362 c:\cpp\sysbiol\valhitview\data_display.h
+	<math.h>
+	<vector>
+	"graph.h"
+
+1367495614 source:c:\cpp\sysbiol\valhitview\main.cpp
+	<SOIL/SOIL.h>
+	<windows.h>
+	<gl/gl.h>
+	<fcntl.h>
+	<stdio.h>
+	<sstream>
+	<fstream>
+	<vector>
+	"data_display.h"
+
+1367254368 source:c:\cpp\sysbiol\valhitview switch\graph.cpp
+	"graph.h"
+
+1367426666 c:\cpp\sysbiol\valhitview switch\graph.h
+	<stdlib.h>
+	<vector>
+	<gl\gl.h>
+	<iostream>
+
+1367505269 source:c:\cpp\sysbiol\valhitview switch\main.cpp
+	<SOIL/SOIL.h>
+	<windows.h>
+	<gl/gl.h>
+	<fcntl.h>
+	<stdio.h>
+	<sstream>
+	<fstream>
+	<vector>
+	"data_display.h"
+
+1367505371 c:\cpp\sysbiol\valhitview switch\data_display.h
+	<math.h>
+	<vector>
+	"graph.h"
+

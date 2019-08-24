@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="BSwitch" />
+	<File name="data_display.cpp" open="1" top="0" tabpos="3">
+		<Cursor position="2452" topLine="25" />
+	</File>
+	<File name="data_display.h" open="1" top="0" tabpos="2">
+		<Cursor position="1136" topLine="16" />
+	</File>
+	<File name="graph.cpp" open="1" top="0" tabpos="5">
+		<Cursor position="1594" topLine="25" />
+	</File>
+	<File name="graph.h" open="1" top="0" tabpos="4">
+		<Cursor position="1465" topLine="0" />
+	</File>
+	<File name="main.cpp" open="1" top="1" tabpos="1">
+		<Cursor position="3495" topLine="75" />
+	</File>
+</CodeBlocks_layout_file>

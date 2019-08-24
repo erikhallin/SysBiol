@@ -1,0 +1,62 @@
+# depslib dependency file v1.0
+1359196048 source:c:\cpp\sysbiol\bswitch\display.cpp
+	"display.h"
+
+1359063811 c:\cpp\sysbiol\bswitch\display.h
+	<iostream>
+	<sstream>
+	<stdio.h>
+	<ctype.h>
+	<string>
+	<gl\gl.h>
+
+1367254368 source:c:\cpp\sysbiol\bswitch\graph.cpp
+	"graph.h"
+
+1367252235 c:\cpp\sysbiol\bswitch\graph.h
+	<stdlib.h>
+	<vector>
+	<gl\gl.h>
+	<iostream>
+
+1367590109 source:c:\cpp\sysbiol\bswitch\main.cpp
+	<SOIL/SOIL.h>
+	<windows.h>
+	<gl/gl.h>
+	<fcntl.h>
+	<stdio.h>
+	"data_display.h"
+
+1367589949 c:\cpp\sysbiol\bswitch\data_display.h
+	<math.h>
+	<vector>
+	"graph.h"
+
+1367590160 source:c:\cpp\sysbiol\bswitch\data_display.cpp
+	"data_display.h"
+
+1367254368 source:c:\erikprogram\sysbiol\bswitch\graph.cpp
+	"graph.h"
+
+1367252235 c:\erikprogram\sysbiol\bswitch\graph.h
+	<stdlib.h>
+	<vector>
+	<gl\gl.h>
+	<iostream>
+
+1367761344 source:c:\erikprogram\sysbiol\bswitch\data_display.cpp
+	"data_display.h"
+
+1367589949 c:\erikprogram\sysbiol\bswitch\data_display.h
+	<math.h>
+	<vector>
+	"graph.h"
+
+1367683853 source:c:\erikprogram\sysbiol\bswitch\main.cpp
+	<SOIL/SOIL.h>
+	<windows.h>
+	<gl/gl.h>
+	<fcntl.h>
+	<stdio.h>
+	"data_display.h"
+
